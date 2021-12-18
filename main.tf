@@ -137,7 +137,7 @@ resource "aws_instance" "web-server-instance"{
 
 resource "aws_key_pair" "stage" {
   key_name   = "key_stage"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD1Go6CLw1cYSzwhb9QU4q/uDF4RVdTBkkDaq3vEM2maFemRbHI3tG9guGRNRXCnvRAbz+09aJGPTZ4lTEaqBY1YiAV7lt3g+sRBO3g412Lu6JBsvEKyjgzYai1CZUSSgEmUHTh5DYT/K5S/POog9X1EZ9+iL+1/yHgZmBMCXP8KuJqwUHG5AoKKt8RydH4OnJvQDN0dhCeiVXYNISer1LjVFZTObwtzL5nOSe+GE+T0I6tKYD7mk0IDUGPk8A4pcJGQnVlSYVX1FgXuOoaHrGVvIGWxuJz4+xIdfU4iGr1OcosXa77WdRPItp/8lFPgLvL+wZomT4SzSsUN+8a2rIpmqafI2bCj6fC1dx53tmGpEgCKjBI/oFCzQzDMNpqCwMWOTXFAZ+IamNDhF2rRrRHKEUta3UABczu6g72SAgKlsq5hNdGXLAy8Mer+vFb2m4XizCXG+mrUuipWgJrcnKjraaC4viy2L3XZnL7L6YlD8yFjLkIcBPLQ1RWDO0l3Cc= israel@vm"
+  public_key = "Aqui va tu key pair"
 }
 output "instance_ips" {
   value = aws_instance.web-server-instance.*.public_ip
